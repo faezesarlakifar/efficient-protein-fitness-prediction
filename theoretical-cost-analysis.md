@@ -115,4 +115,7 @@ This is the actual trade-off the project is measuring: RMT converts the quadrati
 
 *`d`, `b`, `L` are fixed model/hyperparameter choices, not functions of input length, so they're treated as constants in here.*
 
+---
+
+**This is actually the ideal situation for cost analysis, where all the instructions are considered as used. However, in reality this gonna be changed a bit. I need to do the actual cost analysis using Python libraries like "fvcore," introduced by Meta, and the selected dataset.**
 *My reason is that here I want to compare RMT-style with full-sequence-length methods of inference, so the key parameter to take care of would be n==sequence length.*
