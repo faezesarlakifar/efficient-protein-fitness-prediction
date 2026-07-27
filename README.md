@@ -1,5 +1,5 @@
 # APAI-project-work
-Transformer-based model - inference time cost analysis
+Transformer-based model - inference time cost analysis for the protein fitness prediction task
 
 
 ### Project goal:
