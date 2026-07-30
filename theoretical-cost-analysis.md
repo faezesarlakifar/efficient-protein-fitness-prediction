@@ -120,3 +120,6 @@ This is the actual trade-off the project is measuring: RMT converts the quadrati
 ---
 
 **This is actually the ideal situation for cost analysis, where all the instructions are considered as used. However, in reality this gonna be changed a bit. I need to do the actual cost analysis using Python libraries like "fvcore," introduced by Meta, and the selected dataset.**
+
+
+**When evaluating Full Sequence Transformer Inference versus Recurrent Memory Transformer (RMT) Inference, the choice comes down to a trade-off between exact global context (at quadratic memory cost) and bounded memory scaling (at the cost of sequential execution and compressed context).**
