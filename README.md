@@ -23,6 +23,6 @@ Small enough (35M – 150M params) to profile and iterate on quickly for a 3-CFU
 - Dataset: ProteinGym DMS substitutions benchmark (217 assays, ~2.7M measured missense variants), loaded via the Hugging Face dataset OATML-Markslab/ProteinGym_v1 (config “DMS_substitutions”) -  avoids handling the full raw zip archive.
 For now, I don’t run all 217 assays. I picked a stratified subset (~15–20 assays) covering short (<200 aa), medium (200–500 aa), and long (>500 aa) proteins, so the cost/accuracy trade-off can be analyzed as a function of sequence length, not just in aggregate.
 ### Define the cost analysis methodology
-- MACs: measured with fvcore.nn.FlopCountAnalysis, at a sweep of sequence lengths (64, 128, 256, 512, 1024, 2048).
+- MACs: measured with fvcore.nn.FlopCountAnalysis, at a sweep of sequence lengths (40, 101, 248, 448, 770, 3423) (actual protein sequence sizes).
 - Memory: peak GPU memory via torch.cuda.max_memory_allocated(), reset between runs.
 - Repeat each cost measurement 3x and average to reduce noise.
