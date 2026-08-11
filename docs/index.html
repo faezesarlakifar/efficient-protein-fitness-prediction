@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Report</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        iframe {
+            width: 100%;
+            min-height: 500px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Project Report</h1> -->
+    <iframe id="pdfViewer" src="report.pdf" title="report.pdf"></iframe>
+
+    <script>
+        function adjustIframeHeight() {
+            var iframe = document.getElementById('pdfViewer');
+            iframe.style.height = window.innerHeight + 'px';
+        }
+
+        window.onload = adjustIframeHeight;
+        window.onresize = adjustIframeHeight;
+    </script>
+</body>
+</html>
