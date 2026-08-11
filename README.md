@@ -1,6 +1,11 @@
-# APAI-project-work
+# APAI project work
 Transformer-based model - inference time cost analysis for the protein fitness prediction task
 
+<p align="left">
+  <img src="https://d2hpwsdp0ihr0w.cloudfront.net/sessions/_branding/c5fba5f9-ac34-4913-bd0b-ac0800da0cb8/638460915437026224_largelogo.png" alt="Unibo Logo" width="400">
+</p>
+
+This is a repository presenting the project work for Architectures and Platforms for Artificial Intelligence, a course in the Master's degree program in AI at the University of Bologna.
 
 ### Project goal:
 Run a general-purpose protein transformer (baseline, full sequence, no block/recurrence) on a subset of ProteinGym, and measure two things: (1) compute cost (MACs and memory) as sequence length grows, (2) accuracy on fitness prediction. Then try to use the block strategy and/or optimization techniques like sequence compression with an autoencoder, teach a lighter model using knowledge distillation, etc.
